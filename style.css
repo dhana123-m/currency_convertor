@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+/* Login Page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  text-align: center;
+}
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signin-title {
+  margin: 1rem 0;
+}
+.login-btn {
+  background: #5a1ea1;
+  color: white;
+  padding: 0.7rem;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.divider {
+  margin: 1rem 0;
+  position: relative;
+}
+.divider::before, .divider::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 40%;
+  background: #999;
+  top: 50%;
+}
+.divider::before {
+  left: 0;
+}
+.divider::after {
+  right: 0;
+}
+
+.social-icon{
+  width: 20px;
+  height: 20px;
+}
+
+.google-btn, .facebook-btn {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: none;
+  margin: 0.5rem 0;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.google-btn {
+  background: #fff;
+  color: #444;
+}
+.facebook-btn {
+  background: #1877F2;
+  color: white; 
+}
+
+/* Converter Page */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+.signin-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+.converter-card {
+  background: rgba(255, 255, 255, 0.05);
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  text-align: center;
+}
+.dropdowns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.dropdown {
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  background-color: #5a1ea1;
+}
+.switch-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+.result-box {
+  margin-top: 1rem;
+  background: rgba(255,255,255,0.1);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.dropdown.with-flag option{
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 30px;
+  background-size: 20px 15px;
+}
+
+@media (max-width: 600px) {
+  .dropdowns {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Convertor</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="converter-body">
+  <nav class="top-nav">
+    <div class="nav-left">
+      <img src="assets/logo.png" alt="Logo" class="logo">
+      <h1>CURRENCY<br>CONVERTOR</h1>
+    </div>
+    <button class="signin-btn" onclick="redirectToLogin()">Sign Out</button>
+  </nav>
+
+  <div class="converter-card">
+    <h2>currency convertor</h2>
+    <input type="number" min="0" placeholder="Enter Amount" id="amount" class="input-field">
+    <div class="dropdowns">
+      <select id="from-currency" class="dropdown with-flag"></select>
+      <button class="switch-btn">&#8646;</button>
+      <select id="to-currency" class="dropdown with-flag"></select>
+    </div>
+    <div id="result" class="result-box">Result</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
